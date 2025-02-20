@@ -95,7 +95,7 @@ function useDeepgram(): DeepgramContextType {
   const context = useContext(DeepgramContext);
   if (context === undefined) {
     throw new Error(
-      "useDeepgram must be used within a DeepgramContextProvider"
+      "useDeepgram must be used within a DeepgramContextProvider - [RenanGeorgio]"
     );
   }
   return context;
