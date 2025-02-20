@@ -115,7 +115,7 @@ function useMicrophone(): MicrophoneContextType {
 
   if (context === undefined) {
     throw new Error(
-      "useMicrophone must be used within a MicrophoneContextProvider"
+      "useMicrophone must be used within a MicrophoneContextProvider - [RenanGeorgio]"
     );
   }
 
