@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
   if (!project) {
     return NextResponse.json(
       new DeepgramError(
-        "Cannot find a Deepgram project. Please create a project first."
+        "Cannot find the project. Please create a project first."
       )
     );
   }
