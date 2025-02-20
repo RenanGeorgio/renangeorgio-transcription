@@ -15,12 +15,11 @@ import {
 import Visualizer from "./Visualizer";
 
 const App: () => JSX.Element = () => {
-  const [caption, setCaption] = useState<string | undefined>(
-    "Powered by Deepgram"
-  );
+  const [caption, setCaption] = useState<string | undefined>("Powered by: Renan Georgio");
+  
   const { connection, connectToDeepgram, connectionState } = useDeepgram();
-  const { setupMicrophone, microphone, startMicrophone, microphoneState } =
-    useMicrophone();
+  const { setupMicrophone, microphone, startMicrophone, microphoneState } = useMicrophone();
+  
   const captionTimeout = useRef<any>();
   const keepAliveInterval = useRef<any>();
 
